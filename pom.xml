@@ -9,15 +9,16 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
-	<groupId>com.skyg0d</groupId>
-	<artifactId>spring-boot-jwt</artifactId>
+	<groupId>br.com.ravelist</groupId>
+	<artifactId>rave-list-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
-	<name>spring-boot-jwt</name>
-	<description>SpringBoot Boilerplate with JWT Refresh Token</description>
+	<name>rave-list-api</name>
+	<description>Rave-List API</description>
 
 	<properties>
 		<java.version>11</java.version>
+		<org.mapstruct.version>1.5.2.Final</org.mapstruct.version>
 	</properties>
 
 	<dependencies>
@@ -49,8 +50,8 @@
 		</dependency>
 
 		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
 			<scope>runtime</scope>
 		</dependency>
 
@@ -64,6 +65,18 @@
 			<groupId>io.jsonwebtoken</groupId>
 			<artifactId>jjwt</artifactId>
 			<version>0.9.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.mapstruct</groupId>
+			<artifactId>mapstruct</artifactId>
+			<version>${org.mapstruct.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.mapstruct</groupId>
+			<artifactId>mapstruct-processor</artifactId>
+			<version>${org.mapstruct.version}</version>
 		</dependency>
 
 		<!-- test dependencies -->
